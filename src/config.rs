@@ -122,7 +122,6 @@ lazy_static::lazy_static! {
         let mut map = HashMap::new();
         map.insert("password".to_string(), "Jsj@123".to_string());
         // 如果你还想固定其他设置（例如禁用IP直接连接），可以继续添加：
-        // map.insert("direct-ip".to_string(), "N".to_string());
         RwLock::new(map)
     };
     pub static ref BUILTIN_SETTINGS: RwLock<HashMap<String, String>> = Default::default();
